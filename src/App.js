@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { Switch,useState } from "react";
+import { BrowserRouter as Route } from "react-router-dom";
+import "./App.css";
+import data from "./data/data";
+// import UpdateStudent from "./Components/updateStudent";
+// import Base from './base/base';
+import Student from "./Components/student";
+// import Addstudent from "./Components/Addstudent";
 
 function App() {
+  const [students, setStudents] = useState(data);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App min-h-screen bg-gradient-to-r from-cyan-500 to-blue-500">
+      <Switch>
+
+        <Route exact path="/">
+          <Student
+          Students={students}
+          setStudents={setStudents}/>    
+        </Route>
+
+
+       
+     
+      </Switch>
     </div>
   );
 }
