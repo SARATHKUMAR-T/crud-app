@@ -30,7 +30,7 @@ function Students({students, setStudents}) {
     description={"The page contains all students data"}
     >
 
-         <div className='card-container grid grid-cols-3 gap-12 p-6'>
+         <div className='card-container sm:grid-cols-1  grid md:grid-cols-3 gap-12 p-6'>
             {students.map((stud, idx)=>(
                      <div className='card  rounded-lg bg-gray-200 shadow-xl p-6 duration-300 hover:scale-105' key={idx}>
                         <div className='content flex flex-col uppercase gap-2 mb-8'>

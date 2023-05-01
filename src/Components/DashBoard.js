@@ -4,8 +4,8 @@ import Base from "../base/base";
 const DashBoard = () => {
   return (
     <Base title={"Welocome to B45WD"} description={"This student list website"}>
-      <div className="container">
-        <div className="bg-gray-200 flex flex-col items-center gap-4 text-gray-700 font-semibold p-4 min-h-screen rounded-lg shadow-xl">
+      <div className="cont mx-auto max-w-full flex justify-center">
+        <div className="bg-gray-200 flex flex-col sm:w-full items-center md:w-1/2 gap-4 text-gray-700 font-semibold p-4 min-h-screen rounded-lg shadow-xl">
           <p className="mt-4 text-4xl">Hi Geeks !</p>
           <h2 className="text-2xl mt-6 text-green-500">
             Reputed Edtech platform for Vernacular Languages

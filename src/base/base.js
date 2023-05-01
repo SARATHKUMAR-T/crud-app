@@ -4,7 +4,7 @@ import { useHistory } from "react-router-dom";
 const Base = ({ title, description, children }) => {
   const history = useHistory();
   return (
-    <div className=" sm:grid-cols-1 max-w-full min-h-screen grid md:grid-cols-8  grid-rows-auto  grid-flow-col-dense ">
+    <div className=" sm:flex sm:flex-col max-w-full min-h-screen md:grid md:grid-cols-8  grid-rows-auto  grid-flow-col-dense ">
       <section
         id="side-nav "
         className=" md:block hidden min-h-screen pt-6  font-semibold bg-[#ff922b] row-span-6  "
@@ -49,10 +49,10 @@ const Base = ({ title, description, children }) => {
           <button></button>
         </div>
       </section>
-      <header className="sm:col-span-1 h-24 font-semibold  md:col-span-7 bg-[#ffe8cc] shadow-lg p-6">
+      <header className=" h-24 font-semibold  md:col-span-7 bg-[#ffe8cc] shadow-lg p-6">
         <h1 className="heading text-3xl font-semibold text-gray-800 ">{title}</h1>
       </header>
-      <main className="main-segment sm:col-span-0 font-semibold shadow-xl mt-4 p-6 min-h-screen md:col-span-7  ">
+      <main className="main-segment  font-semibold shadow-xl mt-4 p-6 min-h-screen md:col-span-7  ">
         <div>{children}</div>
       </main>
     </div>
