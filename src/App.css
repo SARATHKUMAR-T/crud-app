@@ -16,20 +16,3 @@
   margin: 0px;
 }
  
-.main-component{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
- 
-.heading{
-  padding : 50px;
-  font-family: sans-serif;
-}
- 
-.main-segment{
-  width: 100%;
-  text-align: center;
-  height: 75%;
-}
