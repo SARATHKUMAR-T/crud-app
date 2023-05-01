@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import Base from "../Base/Base";
+import Base from "./Base/Base";
 import { useHistory } from "react-router-dom";
 
 function UpdateStudents({ students, setStudents }) {
