@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import Base from "./Base/Base";
+import Base from "../base/base";
 import { useHistory } from "react-router-dom";
+
 
 function AddStudents({ students, setStudents }) {
   const history = useHistory();

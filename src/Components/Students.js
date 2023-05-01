@@ -1,5 +1,5 @@
 // import React, { useState } from 'react'
-import Base from './Base/Base'
+import Base from '../base/base';
 // import data from '../Data/data'
 // import AddStudents from './AddStudents';
 // import UpdateStudents from './UpdateStudents';

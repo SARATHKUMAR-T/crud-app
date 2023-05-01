@@ -1,5 +1,5 @@
 import React from "react";
-import Base from "./Base/Base";
+import Base from "../base/base";
 
 const DashBoard = () => {
   return (
