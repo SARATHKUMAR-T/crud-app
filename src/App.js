@@ -16,7 +16,7 @@ function App() {
 
   useEffect(()=>{
     const getStudents = async () =>{
-        const response = await fetch("https://6427aa3446fd35eb7c437e60.mockapi.io/students", {
+        const response = await fetch("https://644b33c017e2663b9deab94b.mockapi.io/students", {
           method:"GET",
         }); 
         const data = await response.json();

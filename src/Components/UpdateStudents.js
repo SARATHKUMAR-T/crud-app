@@ -27,7 +27,7 @@ function UpdateStudents({ students, setStudents }) {
       qualification: qualification,
     };
     const response = await fetch(
-      `https://6427aa3446fd35eb7c437e60.mockapi.io/${editStudent.id}`,
+      `https://644b33c017e2663b9deab94b.mockapi.io/${editStudent.id}`,
       {
         method: "PUT",
         body: JSON.stringify(updatedObject),

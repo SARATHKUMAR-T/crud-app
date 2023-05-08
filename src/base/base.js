@@ -9,6 +9,8 @@ const Base = ({ title, description, children }) => {
         id="side-nav "
         className=" md:block hidden min-h-screen pt-6  font-semibold bg-[#ff922b] row-span-6  "
       >
+        <div className="flex flex-col gap-8 p-4"></div>
+
         <div className="flex flex-col gap-8 items-center">
           <button
             onClick={() => history.push("/")}
@@ -43,14 +45,12 @@ const Base = ({ title, description, children }) => {
             </span>
             <span class="relative text-white">Add-student</span>
           </button>
-
-          <button></button>
-
-          <button></button>
         </div>
       </section>
       <header className=" h-24 font-semibold  md:col-span-7 bg-[#ffe8cc] shadow-lg p-6">
-        <h1 className="heading text-3xl font-semibold text-gray-800 ">{title}</h1>
+        <h1 className="heading text-3xl font-semibold text-gray-800 ">
+          {title}
+        </h1>
       </header>
       <main className="main-segment  font-semibold shadow-xl mt-4 p-6 min-h-screen md:col-span-7  ">
         <div>{children}</div>

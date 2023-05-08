@@ -20,7 +20,7 @@ function AddStudents({ students, setStudents }) {
     };
 
     const response = await fetch(
-      "https://6427aa3446fd35eb7c437e60.mockapi.io/students",
+      "https://644b33c017e2663b9deab94b.mockapi.io/students",
       {
         method: "POST",
         body: JSON.stringify(newStudents),
@@ -51,6 +51,7 @@ function AddStudents({ students, setStudents }) {
               type="text"
               id="name"
               value={name}
+             required
               onChange={e => setName(e.target.value)}
             />
           </div>
@@ -63,6 +64,7 @@ function AddStudents({ students, setStudents }) {
               placeholder="Enter Batch"
               type="text"
               id="batch"
+              required
               value={batch}
               onChange={e => setBatch(e.target.value)}
             />
@@ -76,6 +78,7 @@ function AddStudents({ students, setStudents }) {
               placeholder="Enter Gender"
               type="text"
               id="gender"
+              required
               value={gender}
               onChange={e => setGender(e.target.value)}
             />
@@ -89,6 +92,7 @@ function AddStudents({ students, setStudents }) {
               placeholder="Enter Qualifiaction"
               type="text"
               id="qualification"
+              required
               value={qualification}
               onChange={e => setQualification(e.target.value)}
             />
@@ -97,6 +101,7 @@ function AddStudents({ students, setStudents }) {
           <button
             className="mx-auto mt-4 p-2 rounded-md shadow-xl w-1/2 bg-green-600 duration-300 transition-all mb-2 hover:scale-105 hover:text-white"
             onClick={createStudent}
+            type="submit"
           >
             Create Student
           </button>
