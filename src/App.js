@@ -14,18 +14,18 @@ import { Redirect } from 'react-router-dom';
 function App() {
   const [students, setStudents] = useState([]);
 
-  useEffect(()=>{
-    const getStudents = async () =>{
-        const response = await fetch("https://644b33c017e2663b9deab94b.mockapi.io/students", {
-          method:"GET",
-        }); 
-        const data = await response.json();
-        if(data){
-          setStudents(data)
-        }
-    }
-    getStudents();
-  }, [])
+    useEffect(()=>{
+      const getStudents = async () =>{
+          const response = await fetch("https://644b33c017e2663b9deab94b.mockapi.io/students", {
+            method:"GET",
+          }); 
+          const data = await response.json();
+          if(data){
+            setStudents(data)
+          }
+      }
+      getStudents();
+    }, [])
 
   return (
     <div className="App">

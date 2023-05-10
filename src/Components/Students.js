@@ -56,14 +56,14 @@ function Students({ students, setStudents }) {
 
             <div className="control flex flex-col items-center gap-4 ">
               <button
-                className=" bg-gradient-to-r from-green-900 via-green-400 to-green-900 rounded-md w-3/4 p-2 transition-all duration-300 hover:scale-105 hover:opacity-80 hover:text-white"
+                className=" bg-gradient-to-r from-green-900 via-green-400 to-green-900 rounded-lg w-4/6 p-2 transition-all duration-300 hover:scale-105 hover:opacity-80 hover:text-white"
                 onClick={() => history.push(`/edit/${stud.id-1}`)}
               >
                 EDIT
               </button>
 
               <button
-                className="bg-gradient-to-r from-red-600 via-rose-600 to-blue-600 rounded-md p-2 w-3/4 transition-all duration-300 hover:scale-105 hover:opacity-80 hover:text-white"
+                className="bg-gradient-to-r from-red-600 via-rose-600 to-blue-600 rounded-lg p-2 w-4/6 transition-all duration-300 hover:scale-105 hover:opacity-80 hover:text-white"
                 onClick={() => deleteStudent(stud.id)}
               >
                 DELETE
